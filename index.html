@@ -45,7 +45,7 @@
                 <li class="navbar__item">
                     <a href="#skills" class="navbar__links" id="skills-page">Techstack</a>
                 </li>
-                <li class="navbar__item">
+                <li class="navbar__item" >
                     <a href="#soft_skills" class="navbar__links" id="skills-page">Skills</a>
                 </li>
                 <li class="navbar__item">
@@ -58,8 +58,9 @@
                     <a href="./resources/resume/Ashish_resume.pdf"
                     class="navbar__links"
                     target="_blank"
+                    id="resume-button-1"
                     download=""
-                    onclick="window.open('https://1drv.ms/b/s!AsKOUoywUAP7c-xtUVtfVJM0S08?e=NbdcWp');">
+                    onclick="window.open('https://drive.google.com/file/d/1uwV2q9Ot4l9Q2qyxxacAytPYuLYDBFe4/view');">
                 Resume</a>
                 </li>
             </ul>
@@ -72,7 +73,7 @@
     <div id="home">
     <div class="frame" id="namepic">
 
-        <div id="namepic1half nav-link home">
+        <div id="namepic1half " class="nav-link home">
 
             <div class="hero" id="home">
                 <div class="hero__container">
@@ -89,8 +90,8 @@
             target="_blank"
             download=""
             id="btn_anchor"
-            onclick="window.open('https://1drv.ms/b/s!AsKOUoywUAP7c-xtUVtfVJM0S08?e=NbdcWp', '_blank');">
-                <button id="d_resume" class="nav-link resume">Resume
+            onclick="window.open('https://drive.google.com/file/d/1uwV2q9Ot4l9Q2qyxxacAytPYuLYDBFe4/view', '_blank');">
+                <button id="resume-button-1" class="nav-link resume">Resume
                     <i class="fa fa-download"></i>
                 </button>
             </a>
@@ -139,7 +140,7 @@
 </div>
 
     <!-- Techstack Section -->
-    <div class="frame" id="skills">
+    <div class="frame" >
 
         <h4 class="title">Tech Stack</h4>
 
@@ -261,7 +262,7 @@
 
         <div class="pro-card project-card">
 
-            <div class="l-pro-card project-card">
+            <div class="l-pro-card ">
                 <img class="pro-img" id="pro-img1" src="./resources/images/portfolio-1.jpg"
                     alt="BigBasket-Clone">
             </div>
@@ -301,25 +302,25 @@
 
             <div class="r-pro-card">
 
-                <h3 class="pro-title">Style Craze Clone</h3>
+                <h3 class="pro-title project-title">Style Craze Clone</h3>
 
-                <p class="pro-desc">
+                <p class="pro-desc project-description">
                     Style Craze is bloging website in which Women's Fashion, Beauty Wellness Community all New Trends are Posting. It took 5 days to make this clone.
                 </p>
 
                 <p class="pro-desc">
-                    <span class="pro-lower-title">Tech Stack : </span>
+                    <span class="pro-lower-title project-tech-stack">Tech Stack : </span>
                     HTML5 | CSS3 | Javascript
                 </p>
 
-                <p class="pro-desc">A collaborative project, built in 5 days by a team of 5 members.</p>
+                <p class="pro-desc ">A collaborative project, built in 5 days by a team of 5 members.</p>
 
-                <div class="btn-div">
+                <div class="btn-div ">
                     <a href="https://github.com/ChanduDhakad/misty-act-3451" target="_blank"><button
-                            class="pro-btn">Source code <i class="fa fa-external-link"></i></button></a>
+                            class="pro-btn project-github-link">Source code <i class="fa fa-external-link"></i></button></a>
 
                     <a href="https://wonderful-arithmetic-ff3a3a.netlify.app/" target="_blank"><button class="pro-btn">Live <i
-                                class="fa fa-external-link"></i></button></a>
+                                class="fa fa-external-link project-deployed-link"></i></button></a>
                 </div>
 
             </div>
@@ -334,7 +335,7 @@
 
             <div class="r-pro-card">
 
-                <h3 class="pro-title">Ideakart Clone</h3>
+                <h3 class="pro-title project-title">Ideakart Clone</h3>
 
                 <p class="pro-desc">
                     Idea Kart is an e-commerce site that deals with Books.We Can Purachse Our Book From Different Store in Cheaper Price. It took 5 days to make this clone.
@@ -367,14 +368,14 @@
 
             <div class="r-pro-card">
 
-                <h3 class="pro-title">Bus Reservation System</h3>
+                <h3 class="pro-title project-title project-title">Bus Reservation System</h3>
 
-                <p class="pro-desc">
+                <p class="pro-desc project-description">
                     About A REST API for a Bus Reservation System Portal application. This API performs all the fundamental CRUD operations of any Bus Reservation System Portal with user validation at every step.
                 </p>
 
                 <p class="pro-desc">
-                    <span class="pro-lower-title">Tech Stack : </span>
+                    <span class="pro-lower-title project-tech-stack">Tech Stack : </span>
                     Java | MySql | Hibernate | Spring | Spring Boot
                 </p>
 
@@ -382,10 +383,10 @@
 
                 <div class="btn-div">
                     <a href="https://github.com/fp05107/long-dinner-956" target="_blank"><button
-                            class="pro-btn">Source code <i class="fa fa-external-link"></i></button></a>
+                            class="pro-btn project-github-link">Source code <i class="fa fa-external-link"></i></button></a>
 
                             <a href="https://drive.google.com/file/d/1T9I8B3I6nZAWEzTdZ-U7Q-TdAEt5s42S/view" target="_blank"><button class="pro-btn">Video <i
-                                class="fa fa-external-link"></i></button></a>
+                                class="fa fa-external-link project-deployed-link"></i></button></a>
                 </div>
 
             </div>
@@ -404,16 +405,21 @@
             Loading the data.
         </div>
 
-        <div class="stats" id="github-streak-stats">
+        <div class="stats react-activity-calendar">
 
             <div class="statsrow" id="github-stats-card">
                 <img src="https://github-readme-stats.vercel.app/api?username=Ashishmonga00&theme=dark&hide_border=false&include_all_commits=false&count_private=false"
                     alt="">
             </div>
-            <div class="statsrow" id="github-stats-card">
+            
+            <div class="statsrow" id="github-streak-stats">
                 <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ashishmonga00&theme=dark&hide_border=false"
                     alt="">
             </div>
+            <div>
+                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ashishmonga00"  id="github-top-langs"alt="">
+            </div>
+        
 
         </div>
 

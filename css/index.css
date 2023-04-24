@@ -161,7 +161,7 @@ body {
   border-bottom: 4px solid #b0d2da;
 }
 
-#d_resume {
+#resume-button-1 {
   margin: auto;
   display: block;
   background-color: #0a2440;
@@ -175,11 +175,12 @@ body {
 
 }
 
+
 #btn_anchor {
   text-decoration: none;
 }
 
-#d_resume:hover {
+#resume-button-1:hover {
   filter: brightness(70%);
 }
 
