@@ -22,12 +22,12 @@
     </div>
 
     <!-- Navbar Section -->
-    <nav class="navbar">
+    <nav class="navbar" id="nav-menu">
 
         <div class="navbar__container">
 
             <a href="#" id="navbar__logo">
-                <h4 class="transition">Ashish</h4>
+                <h4 class="transition " id="user-detail-name">Ashish</h4>
             </a>
 
             <div class="navbar__toggle" id="mobile-menu">
@@ -69,9 +69,10 @@
 
 
     <!-- Home section  -->
+    <div id="home">
     <div class="frame" id="namepic">
 
-        <div id="namepic1half">
+        <div id="namepic1half nav-link home">
 
             <div class="hero" id="home">
                 <div class="hero__container">
@@ -89,7 +90,7 @@
             download=""
             id="btn_anchor"
             onclick="window.open('https://1drv.ms/b/s!AsKOUoywUAP7c-xtUVtfVJM0S08?e=NbdcWp', '_blank');">
-                <button id="d_resume">Resume
+                <button id="d_resume" class="nav-link resume">Resume
                     <i class="fa fa-download"></i>
                 </button>
             </a>
@@ -109,22 +110,23 @@
 
         <div id="namepic2half">
             <div class="box">
-                <img src="./resources/images/pic.png" alt="">
+                <img class="home-img" src="./resources/images/pic.png" alt="">
             </div>
         </div>
 
     </div>
-
+</div>
+<div id="about" class="about section">
     <!-- About Section -->
     <div class="frame" id="about">
 
-        <div>
+        <div class="nav-link about">
 
             <div id="about_img"><img src="https://mattfarley.ca/img/hero-devices.svg" alt=""></div>
 
             <div id="about_detail">
-                <h4 class="title">About me</h4>
-                <p>Productive JAVA developer versed in the latest technologies and
+                <h4 class="title" >About me</h4>
+                <p id="user-detail-intro">Productive JAVA developer versed in the latest technologies and
                     working under little or no supervision. Skilled in designing and
                     building java codes to increase the efficiency of applications.
                     Excellent team player proficient at debugging minor fixes, and
@@ -134,6 +136,7 @@
         </div>
 
     </div>
+</div>
 
     <!-- Techstack Section -->
     <div class="frame" id="skills">
@@ -188,15 +191,16 @@
     </div>
 
     <!-- Skills Section -->
-    <div class="frame" id="soft_skills">
+    <div id="skills" >
+    <div class="frame nav-link skills" id="soft_skills" >
 
-        <h4 class="title">Skills</h4>
+        <h4 class="title" >Skills</h4>
 
-        <div id="soft_div">
+        <div id="soft_div" >
 
-            <div class="tech-card">
-                <div class="tech-card-logo"><img src="./resources/images/Frontend.jpg" alt=""></div>
-                <div class="tech-card-name">Frontend</div>
+            <div class="tech-card skills-card" >
+                <div class="tech-card-logo skills-card-img"><img src="./resources/images/Frontend.jpg" alt=""></div>
+                <div class="tech-card-name skills-card-name">Frontend</div>
                 <div>
                     <ol class="list">
                         <li class="itm">HTML5</li>
@@ -206,9 +210,9 @@
                 </div>
             </div>
 
-            <div class="tech-card">
-                <div class="tech-card-logo"><img src="./resources/images/Backend.jpg" alt=""></div>
-                <div class="tech-card-name">Backend</div>
+            <div class="tech-card skills-card">
+                <div class="tech-card-logo skills-card-img"><img src="./resources/images/Backend.jpg" alt=""></div>
+                <div class="tech-card-name skills-card-name">Backend</div>
                 <div>
                     <ol class="list">
                         <li class="itm">Spring</li>
@@ -220,9 +224,9 @@
                 </div>
             </div>
 
-            <div class="tech-card">
-                <div class="tech-card-logo"><img src="./resources/images/DSA.jpg" alt=""></div>
-                <div class="tech-card-name">DSA</div>
+            <div class="tech-card skills-card">
+                <div class="tech-card-logo skills-card-img"><img src="./resources/images/DSA.jpg" alt=""></div>
+                <div class="tech-card-name skills-card-name">DSA</div>
                 <div>
                     <ol class="list">
                         <li class="itm">Problem Solving</li>
@@ -230,10 +234,10 @@
                 </div>
             </div>
 
-            <div class="tech-card">
+            <div class="tech-card skills-card">
 
-                <div class="tech-card-logo"><img src="./resources/images/Communication.jpg" alt=""></div>
-                <div class="tech-card-name">Communication</div>
+                <div class="tech-card-logo skills-card-img"><img src="./resources/images/Communication.jpg" alt=""></div>
+                <div class="tech-card-name skills-card-name">Communication</div>
                 <div>
                     <ol class="list">
                         <li class="itm">Presentation</li>
@@ -248,47 +252,48 @@
         </div>
 
     </div>
+</div>
 
     <!-- Projects Section -->
-    <div class="frame" id="projects">
+    <div class="frame nav-link projects" id="projects">
 
-        <h4 class="title">Projects</h4>
+        <h4 class="title project-title">Projects</h4>
 
-        <div class="pro-card">
+        <div class="pro-card project-card">
 
-            <div class="l-pro-card">
+            <div class="l-pro-card project-card">
                 <img class="pro-img" id="pro-img1" src="./resources/images/portfolio-1.jpg"
                     alt="BigBasket-Clone">
             </div>
 
             <div class="r-pro-card">
 
-                <h3 class="pro-title">Big Basket Clone</h3>
+                <h3 class="pro-title project-title ">Big Basket Clone</h3>
 
-                <p class="pro-desc">
+                <p class="pro-desc project-description">
                     Bigbasket is an e-commerce site that was made by me along with 5 group members in a collaborative project. It took 5 days to make this clone.
                 </p>
 
-                <p class="pro-desc">
-                    <span class="pro-lower-title">Tech Stack : </span>
+                <p class="pro-desc project-tech-stack">
+                    <span class="pro-lower-title ">Tech Stack : </span>
                     HTML5 | CSS3 | Javascript
                 </p>
 
                 <p class="pro-desc">A collaborative project, built in 5 days by a team of 6 members.</p>
 
                 <div class="btn-div">
-                    <a href="https://github.com/Vaibhav2416/BigBasket-Clone" target="_blank"><button
+                    <a href="https://github.com/Vaibhav2416/BigBasket-Clone" class="project-github-link"target="_blank"><button
                             class="pro-btn">Source code <i class="fa fa-external-link"></i></button></a>
 
-                    <a href="https://venerable-basbousa-4536f8.netlify.app/" target="_blank"><button class="pro-btn">Live
-                            <i class="fa fa-external-link"></i></button></a>
+                    <a href="https://venerable-basbousa-4536f8.netlify.app/"  class="project-deployed-link" target="_blank"><button class="pro-btn">Live
+                            <i class="fa fa-external-link "></i></button></a>
                 </div>
 
             </div>
 
         </div>
 
-        <div class="pro-card">
+        <div class="pro-card project-card">
 
             <div class="l-pro-card">
                 <img class="pro-img" id="pro-img2" src="./resources/images/portfolio-2.png" alt="Bewakoof">
@@ -321,7 +326,7 @@
 
         </div>
 
-        <div class="pro-card">
+        <div class="pro-card project-card">
 
             <div class="l-pro-card">
                 <img class="pro-img" id="pro-img2" src="./resources/images/portfolio-3.jpg" alt="Ideakart Clone">
@@ -354,7 +359,7 @@
 
         </div>
 
-        <div class="pro-card">
+        <div class="pro-card project-card">
 
             <div class="l-pro-card">
                 <img class="pro-img" id="pro-img2" src="./resources/images/busreservation.png" alt="Ideakart Clone">
@@ -399,13 +404,13 @@
             Loading the data.
         </div>
 
-        <div class="stats">
+        <div class="stats" id="github-streak-stats">
 
-            <div class="statsrow">
+            <div class="statsrow" id="github-stats-card">
                 <img src="https://github-readme-stats.vercel.app/api?username=Ashishmonga00&theme=dark&hide_border=false&include_all_commits=false&count_private=false"
                     alt="">
             </div>
-            <div class="statsrow">
+            <div class="statsrow" id="github-stats-card">
                 <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ashishmonga00&theme=dark&hide_border=false"
                     alt="">
             </div>
@@ -420,27 +425,27 @@
         <h4 class="title">Contact Me</h4>
        
 
-        <div id="con-main-card">
+        <div id="con-main-card " class="nav-link contact" style="text-align: center;">
 
-            <a href="https://www.linkedin.com/in/ashish-monga-734ba1205" target="_blank" class="hvr-forward">
+            <a href="https://www.linkedin.com/in/ashish-monga-734ba1205" target="_blank" class="hvr-forward" id="contact-linkedin">
                 <div class="con-card transition">
                     <i class="fa fa-linkedin-square" target="_blank"></i>
-                    <h6> LinkedIn</h6>
+                    <h6 > LinkedIn</h6>
                 </div>
             </a>
-            <a href="https://github.com/Ashishmonga00/" target="_blank" class="hvr-forward">
+            <a href="https://github.com/Ashishmonga00/" target="_blank" class="hvr-forward" id="contact-github">
                 <div class="con-card transition">
                     <i class="fa fa-github" target="_blank"></i>
                     <h6> Github</h6>
                 </div>
             </a>
-            <a href="mailto:ashishmonga020@gmail.com" target="_blank" class="hvr-forward">
+            <a href="mailto:ashishmonga020@gmail.com" target="_blank" class="hvr-forward" id="contact-email">
                 <div class="con-card transition">
                     <i class="fa fa-envelope" target="_blank"></i>
                     <h6> Email</h6>
                 </div>
             </a>
-            <a href="tel:+919996429225" target="_blank" class="hvr-forward">
+            <a href="tel:+919996429225" target="_blank" class="hvr-forward" id="contact-phone">
                 <div class="con-card transition">
                     <i class="fa fa-phone" target="_blank"></i>
                     <h6> +91 9996429225</h6>
@@ -455,6 +460,9 @@
                     <div class="col">
                         <label for="name">Name :</label>
                     </div>
+
+
+        
                     <div class="col">
                         <input type="text" id="name" name="name" placeholder="Your name.." required>
                     </div>
