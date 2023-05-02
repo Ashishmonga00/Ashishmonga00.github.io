@@ -116,6 +116,7 @@ body {
   background-color: #829db3;;
   display: flex;
   height: 100vh;
+  justify-content: center;
 }
 
 #namepic1half {
@@ -161,7 +162,7 @@ body {
   border-bottom: 4px solid #b0d2da;
 }
 
-#resume-button-1 {
+#resume-button-2 {
   margin: auto;
   display: block;
   background-color: #0a2440;
@@ -409,6 +410,7 @@ body {
   height: auto;
   padding-top: 100px;
   padding-bottom: 60px;
+  
   
 }
 
@@ -904,6 +906,8 @@ html {
     height: 500px;
     padding-top: 100px;
     padding-bottom: 100px;
+    
+
   }
 
   .txt {
